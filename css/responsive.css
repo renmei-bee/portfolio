@@ -1,0 +1,53 @@
+
+
+/* works slide */
+
+@media screen and (max-width: 1250px) {
+    .slide {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .slide-navigation {
+      width: 100%;
+    }
+    .slide-navigation .item .image::before {
+      padding-top: 50%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+  .slick-prev {
+    top: 20px;
+    bottom: 0;
+    right: auto;
+    left: 20px;
+  }
+}
+
+
+
+/* 1300px以下　調整 */
+@media(max-width:1300px){
+    .wrapper-name h1,
+    .wrapper-about h1,
+    .wrapper-works h1,
+    .wrapper-contact h1, 
+    .wrapper-worksall h1,
+    .wrapper-workspage h1 {
+      left: 20px;
+    }
+
+    header .page-header{
+    left: 65%;
+    }
+    #about{
+      width: 80%;
+      margin: 0 auto;
+    }
+    #works-item .wrapper-copyright p {
+      right: 5%;
+    }
+  }
+

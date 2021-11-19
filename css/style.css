@@ -498,9 +498,6 @@ nav ul a{
   background-color: #fff;
   opacity: 1;
 }
-#works .works-content .bx-slider{
-  background-color: #fff;
-}
 
 .works-all ul{
   width: 80%;
@@ -559,7 +556,8 @@ nav ul a{
   text-align: center;
   display: inline-block;
   position: absolute;
-  left: 300px;
+  left: 10%;
+  bottom: 10%;
 }
 
 
@@ -650,7 +648,7 @@ nav ul a{
   text-align: center;
   display: inline-block;
   position: absolute;
-  left: -150px;
+  left: -10%;
 }
 
      /* コピーライトを90度配置する */
@@ -674,12 +672,15 @@ nav ul a{
       .wrapper-name h1,
       .wrapper-about h1,
       .wrapper-works h1,
-      
-      .wrapper-contact h1, 
-      .wrapper-worksall h1,
-      .wrapper-workspage h1 {
+      .wrapper-contact h1{ 
         left: 20px;
       }
+      .wrapper-worksall h1,
+      .wrapper-workspage h1 {
+        display: none;
+        background-color: rebeccapurple;
+      }
+
   
       header .page-header{
       left: 65%;
@@ -692,4 +693,3 @@ nav ul a{
         right: 5%;
       }
     }
-
