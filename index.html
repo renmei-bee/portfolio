@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitomi Yamaguchi Portfolio</title>
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Raleway:wght@200;500&family=Red+Hat+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- bxlider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- works slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <!-- hover.css -->
+    <link rel="stylesheet" href="css/hover.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/4d57b56476.js" crossorigin="anonymous"></script>
+    <!-- bxslider jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slicks slider -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- スムーズスクロール -->
+    <script src="js/smooth-scroll.js"></script>
+    <!-- 背景のアニメーション -->
+    <script src="js/parallax.js"></script>
+
+    <!-- !-- トップbxslider　JS -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
+                mode: 'fade', // アニメーションの種類「'horizontal'」「'vertical'」「'fade'」　（初期値: 'horizontal'）
+                speed: 500, // アニメーションのスピード　（初期値: 500）
+                pause: 4000, // 画像の切り替わる間隔　（初期値: 4000）
+                pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
+                controls: false // 左右の矢印の表示・非表示　（初期値: true）
+            });
+        });
+    </script>
+
+
+    <!-- worksスライダーJS -->
+    <script>
+        $(function () {
+            var slide_main = $(".slide").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: ".slide-navigation"
+            });
+            var slide_sub = $(".slide-navigation").slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                speed: 400,
+                asNavFor: ".slide",
+                focusOnSelect: true,
+                vertical: true,
+                verticalSwiping: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            centerMode: true,
+                            vertical: false,
+                            verticalSwiping: false,
+                            slidesToShow: 3,
+                            adaptiveHeight: true
+                        }
+                    }
+                ]
+            });
+            var open_window_Width = $(window).width();
+            $(window).resize(function () {
+                var width = $(window).width();
+                if (open_window_Width != width) {
+                    slide_main.slick("setPosition");
+                    slide_sub.slick("setPosition");
+                }
+            });
+        });</script>
+    <!-- 背景色用JS -->
+    <script src="js/parallax.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <main>
+        <div class="top-content" 　data-scroll-on>
+            <div id="top" class="page">
+                <header>
+                    <div class="page-header">
+                        <nav>
+                            <ul>
+                                <li class="hvr-shrink"><a href="index.html">Top</a></li>
+                                <li class="hvr-shrink"><a href="#about">About</a></li>
+                                <li class="hvr-shrink"><a href="#works">Works</a></li>
+                                <li class="hvr-shrink"><a href="#contact">Contact</a></li>
+                                <li class="insta hvr-shrink"><a href="https://www.instagram.com/hitommy_yama/"><i
+                                            class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <div class="wrapper-name">
+                    <h1>HITOMI YAMAGUCHI</h1>
+                </div>
+
+                <div class="bxslider">
+                    <div><img src="images/bougain-mockup@2x.jpg"></div>
+                    <div><img src="images/namecard-mockup@2x.jpg"></div>
+                    <div><img src="images/namelogo-mockup-color@2x.jpg"></div>
+                    <div><img src="images/marusannkaku-logo@2x.png"></div>
+                    <div><img src="images/sanzashi-logo@2x.png"></div>
+                    <div><img src="images/bargar-mockup@2x.jpg"></div>
+                    <div><img src="images/bargar-mockup@2x.jpg"></div>
+                    <div><img src="images/welcome-mockup@2x.jpg"></div>
+                    <div><img src="images/shanghai-mockup@2x.jpg"></div>
+                    <div><img src="images/gyudon-mockup@2x.jpg"></div>
+                    <div><img src="images/shirt-mockup@2x.jpg"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about-content" data-scroll-on>
+            <div class="wrapper-about" data-scroll-on>
+                <h1>ABOUT</h1>
+            </div>
+            <div id="about" class="page">
+                </a>
+                <div class="about-text">
+                    <h2>山口　ひとみ</h2>
+                    <h3>Hitomi Yamaguchi</h3>
+                    <p>1992年1月　沖縄県浦添市生まれ<br>
+                        沖縄キリスト教短期大学　英語科卒業<br><br>
+                        2015年から約6年間ブライダルプランナーとして勤務。<br>
+                        沖縄県内ホテルウェディング、リゾートウェディングに携わる。<br><br>
+                        2021年6月から半年間職業訓練学校にて<br>
+                        DTPデザイン、Webデザイン・コーディングを学ぶ。</p>
+                    <h4>使用可能ツール・言語</h4>
+                    <p class="shikaku"> Adobe Photoshop / Adobe Illustrator / Adobe XD <br>
+                        HTML / CSS(SCSS) / jQuery </p>
+
+                    <h4>保有資格</h4>
+                    <p class="shikaku">Illustrator クリエイター能力認定試験　エキスパート<br>
+                        Photoshop　クリエイター能力認定試験　エキスパート<br>
+                        Webクリエイター能力認定試験　エキスパート<br>
+                        秘書技能検定　2級<br>
+                        中国語検定試験　4級<br><br>
+                        など
+                    </p>
+                </div>
+                <img src="images/profile.jpg" alt="山口ひとみ">
+            </div>
+        </div>
+        <div class="works-content" data-scroll-on>
+            <div id="works" class="page">
+                <div class="wrapper-works">
+                    <h1>WORKS</h1>
+                </div>
+
+                <div class="slide-box">
+                    <ul class="slide">
+                        <li class="item">
+                            <a href="bougainvillea.html"><img src="images/bougain-mockup.jpg"
+                                    alt="ブーゲンビリアベーカーズWebサイト" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="ouis.html"><img src="images/ouis-mockup.jpg" alt="沖縄外国語大学Webサイト" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="namecard.html"><img src="images/namecard-mockup.jpg" alt="ヤマグチヒトミ名刺" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="namelogo.html"><img src="images/namelogo-mockup-color.jpg" alt="ヤマグチヒトミ名前ロゴ" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="sanzashi.html"><img src="images/sanzashi-mockup.jpg" alt="料亭さんざしショップカード" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="bargar.html"><img src="images/bargar-mockup.jpg" alt="バーガー雑誌表紙" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="welcome.html"><img src="images/welcome-mockup.jpg" alt="結婚式ウェルカムボードデザイン" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="shanghai.html"><img src="images/shanghai-mockup.jpg" alt="小説装丁デザイン" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="tennis.html"><img src="images/tennis-mockup.jpg" alt="テニスユニフォームロゴデザイン" /></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="cafe.html"><img src="images/cafe-menu.jpg" alt="カフェメニューデザイン" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="gyudon.html"><img src="images/gyudon-mockup.jpg" alt="牛丼レトルトパッケージデザイン" /></a>
+                        </li>
+                        <li class="item">
+                            <a href="shirt.html"><img src="images/shirt-mockup.jpg" alt="オリジナルTシャツデザイン" /></a>
+                        </li>
+
+                    </ul>
+                    <div class="slide-navigation">
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/bougain-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/ouis-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/namecard-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/name-logo-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/sanzashi-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/bargar-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/welcomeboard-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/shanghai-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/tennis-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/cafe-thumbnail.jpg" />
+                            </figure>
+                        </div>
+
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/gyudon-thumbnail.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure class="image">
+                                <img src="images/shirt-thumbnail.jpg" />
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+                <section class="view-more"><a href="works.html"><img src="images/view-more.png" alt=""></a></section>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        <div class="contact-content" data-scroll-on>
+
+            <div id="contact" class="page" 　data-scroll-on>
+                <div class="wrapper-contact">
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="contact-text">
+                    <p>お問い合わせ等ございましたら<br>
+                        Instagramダイレクトメール、もしくは以下より<br>
+                        お気軽にご連絡ください。</p>
+                    <p class="insta"><a href="https://www.instagram.com/hitommy_yama/"><i
+                                class="fab fa-instagram"></i></a>
+                    </p>
+                </div>
+                <form>
+                    <p><label>Name<input type="text" name="username" size="60" required></label></p>
+                    <p><label>Email<input type="email" name="usermail" 　size="60" required> </label></p>
+                    <p><label>Tel<input type="tel" name="user" 　size="60" required> </label></p>
+                    <p><label>Message<textarea name="usercomment" placeholder="お問い合わせ内容をご記入ください。" required></textarea>
+                        </label></p>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="page wrapper-copyright">
+                    <p>&copy;allrights reserved hitomi yamaguchi</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <p class="back-top scroll-fade"><a href="#top"><img src="images/top-yajirushi.png" alt=""></a></p>
+</body>
+
+</html>

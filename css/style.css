@@ -1,0 +1,685 @@
+body{
+  background-color: #a3b5c0;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+}
+
+
+
+.page{
+    width: 1280px;
+    margin-right: 200px;
+    margin-left: auto;
+}
+/* トップへ戻るボタン */
+.back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 10%;
+  display: none;
+ }
+
+/* ナビゲーション */
+header .page-header{
+  /* display: inline-block; */
+  overflow: hidden;
+  position: fixed;
+    top: 40px;
+    left: 70%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0);
+}
+nav ul{
+  width: 390px;
+  height: 50px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.page-header li:last-child{
+  margin-right: 0px;
+}
+nav ul a{
+  text-decoration: none;
+  color: #643250;
+  margin-right: 30px;
+}
+/* インスタアイコンだけ大きく */
+.insta{
+  font-size: 30px;
+}
+/* ------------------
+　　トップページ
+------------------- */
+/* 背景色 */
+.top-content{
+  background-color: #a3b5c0;
+}
+
+  /* トップスライダー */
+  #top{
+    position: relative;
+  }
+ .bx-wrapper {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    /* left: 0; */
+    margin: 100px  auto ;
+   }
+
+   /* タイトルを90度配置する */
+   .wrapper-name h1 {
+    font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 0.8em;
+    writing-mode:vertical-rl;
+    block-size: 30px;
+    inline-size: 100%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: -5%;
+  }
+
+  #top .page{
+    background-color: #000;
+  }
+/* ------------------
+　　About
+------------------- */
+#about{
+  font-family: 'Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0 200px 0;
+  position: relative;
+
+}
+/* 背景色 */
+.about-content{
+  opacity: 0;
+  background-color: #a3b5c0;
+
+}
+.about-content.on {
+  opacity: 1;
+  background-color: #78a3ad;
+ }
+
+.about-text{
+  margin-right: 100px;
+  
+}
+#about h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#about h3{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#about h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#about p{
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+#about p .shikaku{
+  font-size: 14px;
+}
+   /* タイトルを90度配置する */
+   .wrapper-about h1 {
+    font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 0.8em;
+    writing-mode:vertical-rl;
+    block-size: 30px;
+    inline-size: 100%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 300px;
+  }
+
+
+/* ------------------
+　　Works
+------------------- */
+
+#works{
+  color: #643250;
+  padding-top: 160px;
+  position: relative;
+
+}
+/* 背景色 */
+.works-content{
+  opacity: 0;
+  background-color: #78a3ad;
+
+}
+.works-content.on{
+  opacity: 1;
+  background-color: #fff;
+}
+   /* タイトルを90度配置する */
+   .wrapper-works h1 {
+    font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+    font-size: 30px;
+    color: #643250;
+    letter-spacing: 0.8em;
+    writing-mode:vertical-rl;
+    block-size: 30px;
+    inline-size: 500px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: -100px;
+    z-index: 5;
+
+  }
+
+
+/*----------------------
+ works スライダーここから
+ ---------------------- */
+
+
+/* slide-box */
+
+.slide-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+/* slide */
+
+.slide {
+  position: relative;
+  width: 80%;
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+.slide .item {
+  position: relative;
+  height: 100%;
+}
+.slide .item a {
+  display: block;
+}
+.slide .item::before {
+  display: block;
+  padding-top: 39%;
+  content: "";
+}
+.slide .item .image {
+  position: relative;
+  overflow: hidden;
+}
+.slide .item img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+}
+.slide > .slick-list,
+.slide > .slick-list > .slick-track,
+.slide > .slick-list > .slick-track > .slick-slide > div {
+  position: relative;
+  height: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .slide {
+    width: 100%;
+  }
+}
+
+/* slide-navigation */
+
+.slide-navigation {
+  line-height: 0;
+  position: relative;
+  width: 150px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.slide-navigation .item {
+  position: relative;
+  cursor: pointer;
+}
+.slide-navigation .item .image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+.slide-navigation .item .image:first-child {
+  margin-top: 0;
+}
+.slide-navigation .item .image::before {
+  display: block;
+  padding-top: 25%;
+  content: "";
+}
+.slide-navigation .item .image::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.5;
+  background: #090088;
+}
+.slide-navigation .slick-current .image::after {
+  opacity: 0;
+}
+.slide-navigation .item .image {
+  position: relative;
+  overflow: hidden;
+}
+.slide-navigation .item .image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .slide-navigation {
+    width: 100%;
+  }
+  .slide-navigation .item .image::before {
+    padding-top: 50%;
+  }
+}
+
+/* slick */
+
+.slick-vertical .slick-slide {
+  border: 0 solid transparent;
+}
+/* .slick-arrow {
+  z-index: 999;
+} */
+.slick-prev {
+  top: -30px;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.slick-prev:before {
+  content: "↑";
+  color: #643250;
+}
+.slick-next {
+  top: auto;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.slick-next:before {
+  content: "↓";
+  color: #643250;
+
+}
+
+@media screen and (max-width: 767px) {
+  .slick-prev {
+    top: 20px;
+    bottom: 0;
+    right: auto;
+    left: 20px;
+  }
+  .slick-prev:before {
+    content: "←";
+  }
+  .slick-next {
+    top: 20px;
+    bottom: 0;
+    right: 20px;
+    left: auto;
+  }
+  .slick-next:before {
+    content: "→";
+  }
+}
+/*----------------------
+ works スライダーここまで
+ ---------------------- */
+ /* view more矢印 */
+.view-more{
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+/*----------------------
+ Contact
+ ---------------------- */
+ #contact{
+  font-size: 18px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+   padding-top: 150px;
+}
+/* 背景色変更 */
+.contact-content{
+  opacity: 0;
+  background-color: #fff;
+  padding: 200px 0 300px 0;
+
+
+}
+.contact-content.on{
+  opacity: 1;
+  background-color: #75a899;
+  padding: 200px 0 300px 0;
+
+}
+.contact-text{
+  width: 600px;
+  text-align: left;
+  /* インスタアイコンと説明文を横並びにする */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+.contact-text a{
+  color: #fff;
+  margin-left: 100px;
+}
+/* 問い合わせフォーム */
+#contact form{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contact form p{
+  margin-bottom: 20px;
+}
+#contact input{
+  margin-left: 100px;
+  background-color: #fff;
+  width: 600px;
+  height: 50px;
+}
+#contact textarea{
+  margin-left: 100px;
+  background-color: #fff;
+  width: 600px;
+  height: 200px;
+}
+#contact button{
+  font-size: 25px;
+  width: 700px;
+  text-align: right;
+}
+   /* タイトルを90度配置する */
+   .wrapper-contact h1 {
+    font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 0.8em;
+    writing-mode:vertical-rl;
+    block-size: 30px;
+    inline-size: 100%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: -100px;
+  }
+
+
+     /* コピーを90度配置する */
+     .wrapper-copyright p {
+      font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+      font-size: 15px;
+      color: #fff;
+      writing-mode:vertical-rl;
+      block-size: 30px;
+      inline-size: 100%;
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      right: 15%;
+      bottom: 0;
+      }
+
+
+/*----------------------
+  works 一覧 ページ
+ ---------------------- */
+#works{
+  background-color: #fff;
+}
+#works .works-content{
+  background-color: #fff;
+  opacity: 1;
+}
+#works .works-content .bx-slider{
+  background-color: #fff;
+}
+
+.works-all ul{
+  width: 60%;
+  margin: 0 100px 100px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.works-all li{
+  margin-right: 80px;
+  margin-bottom: 50px;
+
+}
+.works-all img{
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+/* ホバーしたら文字が出る */
+.works-all span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #a3b5c000;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  transition: .3s;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.works-all li:hover span{
+  background: #a3b5c0;
+  opacity: 1;
+  text-align: center;
+}
+
+/* タイトルを90度配置する */
+.wrapper-worksall h1 {
+  font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  font-size: 30px;
+  color: #643250;
+  letter-spacing: 0.8em;
+  writing-mode:vertical-rl;
+  block-size: 30px;
+  inline-size: 100%;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 300px;
+}
+
+
+     /* コピーライトを90度配置する */
+     #works .wrapper-copyright p {
+      font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+      font-size: 15px;
+      color: #643250;
+      writing-mode:vertical-rl;
+      block-size: 30px;
+      inline-size: 100%;
+      text-align: right;
+      display: inline-block;
+      position: absolute;
+      right: 15%;
+      bottom: 0px;
+    }
+ /* view more矢印 */
+ .back-page{
+  /* display: inline-block; */
+  text-align: right;
+  margin-right: 300px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  position: relative;
+}
+/* トップへ戻るボタン */
+#works .back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 10%;
+  
+ }
+
+/*----------------------
+  works 個別作品 ページ
+ ---------------------- */
+ #works-item{
+  background-color: #fff;
+  color: #643250;
+  position: relative;
+ }
+ #works-item .works-content{
+   background-color: #fff;
+   opacity: 1;
+ }
+#works-item .works-text{
+  width: 80%;
+  height: 450px;
+  margin:100px auto;
+}
+#works-item .works-text h1{
+ font-size: 30px;
+ margin-bottom: 10px;
+}
+#works-item .works-text h2{
+  font-size: 20px;
+  margin-bottom: 50px;
+
+}
+#works-item .works-text h3{
+  font-size: 20px;
+  margin-bottom: 50px;
+
+}
+#works-item .works-text h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 800;
+
+}
+
+#works-item .works-text p{
+  font-size: 18px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+
+}
+
+.wrapper-workspage h1 {
+  font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  font-size: 30px;
+  color: #643250;
+  letter-spacing: 0.8em;
+  writing-mode:vertical-rl;
+  block-size: 80px;
+  inline-size: 800px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: -150px;
+}
+
+     /* コピーライトを90度配置する */
+    
+     #works-item .wrapper-copyright p {
+      font-family: 'Raleway','Klee One', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+      font-size: 15px;
+      color: #643250;
+      writing-mode:vertical-rl;
+      block-size: 30px;
+      inline-size: 100%;
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      right: 15%;
+      bottom: 0;
+    }
+
+
+    @media(max-width:1300px){
+      .wrapper-name h1,
+      .wrapper-about h1,
+      .wrapper-works h1,
+      .wrapper-contact h1, 
+      .wrapper-worksall h1,
+      .wrapper-workspage h1 {
+        left: 50px;
+      }
+  
+      header .page-header{
+      left: 65%;
+      }
+    }
