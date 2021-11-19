@@ -98,6 +98,7 @@ nav ul a{
   align-items: center;
   padding: 150px 0 200px 0;
   position: relative;
+  width: 100%;
 
 }
 /* 背景色 */
@@ -147,7 +148,7 @@ nav ul a{
     text-align: center;
     display: inline-block;
     position: absolute;
-    left: 300px;
+    left: 150px;
   }
 
 
@@ -502,7 +503,7 @@ nav ul a{
 }
 
 .works-all ul{
-  width: 60%;
+  width: 80%;
   margin: 0 100px 100px auto;
   display: flex;
   justify-content: flex-start;
@@ -580,7 +581,7 @@ nav ul a{
  .back-page{
   /* display: inline-block; */
   text-align: right;
-  margin-right: 300px;
+  margin-right: 20%;
   margin-top: 80px;
   margin-bottom: 60px;
   position: relative;
@@ -607,7 +608,7 @@ nav ul a{
  }
 #works-item .works-text{
   width: 80%;
-  height: 450px;
+  /* height: 450px; */
   margin:100px auto;
 }
 #works-item .works-text h1{
@@ -676,10 +677,16 @@ nav ul a{
       .wrapper-contact h1, 
       .wrapper-worksall h1,
       .wrapper-workspage h1 {
-        left: 50px;
+        left: 20px;
       }
   
       header .page-header{
       left: 65%;
       }
-    }
+      #about{
+        width: 80%;
+        margin: 0 auto;
+      }
+      #works-item .wrapper-copyright p {
+        right: 5%;
+      }
