@@ -66,8 +66,9 @@ nav ul a{
     width: 100%;
     box-shadow: none;
     border: none;
-    /* left: 0; */
     margin: 100px  auto ;
+    position: relative;
+
    }
 
    /* タイトルを90度配置する */
@@ -83,6 +84,8 @@ nav ul a{
     display: inline-block;
     position: absolute;
     left: -5%;
+    z-index: 5;
+
   }
 
   #top .page{
@@ -668,31 +671,3 @@ nav ul a{
     }
 
 
-    @media(max-width:1600px){
-      .page{
-        width: 100%;
-        margin-right: 200px;
-        margin-left: auto;
-    }
-    
-      .wrapper-name h1,
-      .wrapper-about h1,
-      .wrapper-contact h1{ 
-        left: 20px;
-      }
-      .wrapper-works h1{
-        left: 20px;
-        background-color: #ffffff80;
-      }
-  
-      header .page-header{
-      left: 65%;
-      }
-      #about{
-        width: 80%;
-        margin: 0 auto;
-      }
-      #works-item .wrapper-copyright p {
-        right: 5%;
-      }
-    }

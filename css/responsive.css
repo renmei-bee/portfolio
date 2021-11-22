@@ -26,6 +26,36 @@
   }
 }
 
+/* 1600以下 */
+@media(max-width:1600px){
+  .page{
+    width: 100%;
+    margin-right: 200px;
+    margin-left: auto;
+}
+
+  
+  .wrapper-about h1,
+  .wrapper-contact h1{ 
+    left: 20px;
+  }
+  .wrapper-name h1,
+  .wrapper-works h1{
+    left: 20px;
+    background-color: #ffffff80;
+  }
+
+  header .page-header{
+  left: 65%;
+  }
+  #about{
+    width: 80%;
+    margin: 0 auto;
+  }
+  #works-item .wrapper-copyright p {
+    right: 5%;
+  }
+}
 
 
 /* 1300px以下　調整 */
