@@ -668,19 +668,22 @@ nav ul a{
     }
 
 
-    @media(max-width:1300px){
+    @media(max-width:1600px){
+      .page{
+        width: 100%;
+        margin-right: 200px;
+        margin-left: auto;
+    }
+    
       .wrapper-name h1,
       .wrapper-about h1,
-      .wrapper-works h1,
       .wrapper-contact h1{ 
         left: 20px;
       }
-      .wrapper-worksall h1,
-      .wrapper-workspage h1 {
-        display: none;
-        background-color: rebeccapurple;
+      .wrapper-works h1{
+        left: 20px;
+        background-color: #ffffff80;
       }
-
   
       header .page-header{
       left: 65%;
