@@ -1,6 +1,6 @@
 
 
-/* works slide */
+/* works slideレスポンシブ*/
 
 @media screen and (max-width: 1250px) {
     .slide {
@@ -26,58 +26,139 @@
   }
 }
 
-/* 1600以下 */
-@media(max-width:1600px){
-  .page{
-    width: 100%;
-    margin-right: 200px;
-    margin-left: auto;
-}
+/* 1600px以下 */
+@media(max-width:1599px){
+ .page{
+   width: 100%;
+   padding: 0 100px;
+ }
+  /* 縦タイトル位置調整 */
+  .wrapper-name h1{
+    left: 20px;
+    inline-size: auto;
 
-  
+  }
   .wrapper-about h1,
   .wrapper-contact h1{ 
     left: 20px;
+    inline-size: auto;
+
   }
-  .wrapper-name h1,
   .wrapper-works h1{
+    inline-size: auto;
+
     left: 20px;
     background-color: #ffffff80;
   }
 
+/* ヘッダー位置調整 */
   header .page-header{
-  left: 65%;
-  }
-  #about{
-    width: 80%;
-    margin: 0 auto;
-  }
-  #works-item .wrapper-copyright p {
-    right: 5%;
+  right: 5%;
   }
 }
 
 
 /* 1300px以下　調整 */
-@media(max-width:1300px){
-    .wrapper-name h1,
+@media(max-width:1299px){
+
+  .page{
+    width: auto;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* topへ戻る位置調整 */
+.back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  display: none;
+ }
+ /* ヘッダー位置調整 */
+ header .page-header{
+  right: 10px;
+  }
+
+
+  /* タイトルを横配置に変える */
+  .top-content .bxslider{
+    background-color: #a3b5c0;
+    padding: 100px 0;
+  }
+    .wrapper-name h1{
+      text-align: left;
+      left: 50px;
+      writing-mode:horizontal-tb;
+      padding-top: 50px;
+      background-color: #a3b5c0;
+      color: #fff;
+    }
     .wrapper-about h1,
     .wrapper-works h1,
-    .wrapper-contact h1, 
-    .wrapper-worksall h1,
     .wrapper-workspage h1 {
-      left: 20px;
+      text-align: left;
+      writing-mode:horizontal-tb;
+      left: 50px;
+      margin-top: 50px;
     }
+    .wrapper-contact h1{
+      writing-mode:horizontal-tb;
+      left: 50px;
+      padding-top: 0px;
+    }
+    .contact-text{
+    margin-top: 100px;
+    }
+    #works-item .bxslider{
+      width: 50%;
+    }
+    #works-item .wrapper-worksall h1{
+      text-align: left;
+      writing-mode:horizontal-tb;
+      left: -100px;
+      margin-top: 50px;
+      background-color: red;
+    }
+    .wrapper-workspage h1 {
+      text-align: left;
+      writing-mode:horizontal-tb;
+      left: 50px;
+      margin: 50px 0 100px 0;
+      z-index: 5;
+    }
+    .works-all{
+      padding-top: 500px;
+    }
+    /* タイトル調整ここまで */
 
+
+
+    /* ヘッダー位置調整 */
     header .page-header{
-    left: 65%;
-    }
-    #about{
-      width: 80%;
-      margin: 0 auto;
+    padding-bottom: 50px;
     }
     #works-item .wrapper-copyright p {
       right: 5%;
     }
+/* aboutページflex解除 */
+    #about{
+      flex-wrap: wrap;
+      font-size: 12px;
+    }
+
+
+    /* コピーライト位置調整 */
+    .wrapper-copyright p {
+      right: 5%;
+      bottom: 0;
+    }
+
+
+
+
+
+
   }
+
+  
 
